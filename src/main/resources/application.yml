@@ -1,0 +1,4 @@
+spring:
+  data:
+    mongodb:
+      uri: "mongodb+srv://books:books@books-rykam.mongodb.net/test?retryWrites=true"
