@@ -1,6 +1,6 @@
 package com.example.books.service;
 
-import com.example.books.dao.TagsDao;
+import com.example.books.repository.TagsRepository;
 import com.example.books.pojo.Tag;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,7 +11,7 @@ import java.util.List;
 public class TagsServiceImpl implements TagsServices{
 
     @Autowired
-    TagsDao tagsDao;
+    TagsRepository tagsDao;
 
     @Override
     public List<Tag> findAll() {
