@@ -35,6 +35,11 @@ public class BooksServiceImpl implements BooksService {
     }
 
     @Override
+    public void deleteOneBook(String id) {
+        this.booksRepository.deleteById(id);
+    }
+
+    @Override
     public void updateBookInfo(Book book) {
         String sufix = book.getPath().substring(book.getPath().lastIndexOf("."));
         String newName = book.getName()+" - "+book.getAuthor()+sufix;

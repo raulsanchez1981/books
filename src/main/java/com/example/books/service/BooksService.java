@@ -10,6 +10,7 @@ public interface BooksService {
     List<Book> findAllBooks();
     List<Book> findBooksBySearchFilter(BookSearchFilter filter);
     void deleteAllBooks();
+    void deleteOneBook(String id);
     void updateBookInfo(Book book);
     void scanBooks(String path);
 
